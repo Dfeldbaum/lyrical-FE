@@ -16,6 +16,10 @@
   margin-left: 2%;
 
  }
+ #cardcenter{
+  vertical-align: middle;
+  padding: 3em;
+}
  .centerthisdiv {
   margin: 0 auto;
  }
@@ -2224,6 +2228,7 @@ float: center;
 
 .white-text {
   color: #FFFFFF !important;
+  vertical-align: middle;
 }
 
 .transparent {
@@ -5056,6 +5061,7 @@ small {
   border-radius: 2px;
   display: inline-block;
   height: 36px;
+  width: 166px;
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;

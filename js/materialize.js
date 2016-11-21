@@ -1,56 +1,43 @@
-/*!
- * Materialize v0.97.8 (http://materializecss.com)
- * Copyright 2014-2015 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
- */
-// Check for jQuery.
+
 if (typeof(jQuery) === 'undefined') {
   var jQuery;
-  // Check if require is a defined function.
   if (typeof(require) === 'function') {
     jQuery = $ = require('jquery');
-  // Else use the dollar sign alias.
   } else {
     jQuery = $;
   }
-}
-;
+};
 var txt = "Search for lyrics";
 var timeOut;
 var txtLen = txt.length;
 var char = 0;
-$('.main-search').attr('placeholder', '|');
+$('.main-search').attr('placeholder');
 (function typeIt() {
-    var humanize = Math.round(Math.random() * (320 - 30)) + 30;
+    var humanize = Math.round(Math.random() * (300 - 30)) + 30;
     timeOut = setTimeout(function () {
         char++;
         var type = txt.substring(0, char);
-        $('.main-search').attr('placeholder', type + '|');
+        $('.main-search').attr('placeholder', type);
         typeIt();
-
         if (char == txtLen) {
-            $('.main-search').attr('placeholder', $('.main-search').attr('placeholder').slice(0, -1)) // remove the '|'
+            $('.main-search').attr('placeholder', $('.main-search').attr('placeholder'))
             clearTimeout(timeOut);
         }
-
     }, humanize);
 }());
 
 $('.button-collapse').sideNav({
-  menuWidth: 200, // Default is 240
+  menuWidth: 200,
   edge: 'left',
-  closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-  draggable: true // Choose whether you can drag to open on touch screens
+  closeOnClick: true, 
+  draggable: true
 }
 );
-
     $(document).ready(function(){
       $('.carousel').carousel();
     });
         
      
-
-
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *

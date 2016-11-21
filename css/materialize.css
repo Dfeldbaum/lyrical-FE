@@ -6,6 +6,17 @@
  body {
   background: #212121;
  }
+ p {
+  color: white;
+ }
+ #insertlyrics {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+ }
+ #songtitle {
+  
+ }
  #navbar {
   // margin-bottom: 4%;
   text-align: center;
@@ -2686,7 +2697,7 @@ a {
   box-shadow: none !important;
 }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -4683,7 +4694,7 @@ small {
   transition: box-shadow .25s;
   border-radius: 2px;
   height: 296px;
-  width: 439px;
+  width: 298px;
   text-align: center;
   font-size: 1.4em;
 
@@ -7153,7 +7164,6 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav a:hover {
 background: #f39c12;
-  font-weight: bold;
 }
 
 .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
@@ -7206,7 +7216,7 @@ background: #f39c12;
 
 .side-nav .userView {
   position: relative;
-  padding: 32px 32px 0;
+  // padding: 32px 32px 0;
   margin-bottom: 8px;
 }
 
